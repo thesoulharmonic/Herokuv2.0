@@ -13,14 +13,14 @@ const userinfo = fs.readFileSync("userinfo.json");
 app.use(express.json()); // middleware that coverts the body to json
 app.use(cors())
 
-app.get ("/*", function (req, res) {
-  res.sendFile(
-    path.join(__dirname, "../client/public/index.html"),
-    function (err){
-      if(err){res.status(500).send(err);}
-    }
-  )
-})
+// app.get ("/*", function (req, res) {
+//   res.sendFile(
+//     path.join(__dirname, "../client/public/index.html"),
+//     function (err){
+//       if(err){res.status(500).send(err);}
+//     }
+//   )
+// })
 
 app.get("/api", (req, res) => { //  takes in the userinfo and displays it at /api
     try {

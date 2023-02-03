@@ -20,7 +20,7 @@
   },
   "scripts": {
     "start": "npm install",
-    "build": "react-scripts build && (cd ./server && npm install)",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "dev": "nodemon server",
     "eject": "react-scripts eject"

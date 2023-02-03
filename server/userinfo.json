@@ -1,0 +1,30 @@
+[
+  {
+    "user": [
+      {
+        "username": "thesoulharmonic",
+        "profilePic": "../img/profilePic2.jpg",
+        "title": "TacToe",
+        "email": "thesoulharmonic@gmail.com",
+        "description": "Tic Tac Toe is a simple two-player game played on a 3x3 grid, where players take turns marking a square with either X or O, with the goal of getting three in a row vertically, horizontally, or diagonally before their opponent. The game ends in a draw if all squares are filled without a player getting three in a row.",
+        "link": "http://www.github.com/thesoulharmonic"
+      },
+      {
+        "username": "thesoulharmonic",
+        "profilePic": "../img/profilePic1.jpeg",
+        "title": "Hangman",
+        "email": "thesoulharmonic@gmail.com",
+        "description": "Hangman is a classic word-guessing game where players attempt to guess a secret word by suggesting letters. Incorrect guesses result in a hangman illustration being drawn, with the game ending when the illustration is complete or the word is successfully guessed.",
+        "link": "http://www.github.com/thesoulharmonic/hangman"
+      },
+      {
+        "username": "codemesomething",
+        "title": "Swoosh - ReactJS",
+        "profilePic": "../img/profilePic2.jpg",
+        "email": "thesoulharmonic@gmail.com",
+        "description": "First ReactJS app. Follow the instructions on GitHub for installation options.",
+        "link": "https://github.com/thesoulharmonic/swoosh-home"
+      }
+    ]
+  }
+]

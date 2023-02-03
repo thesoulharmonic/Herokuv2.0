@@ -13,6 +13,15 @@ const userinfo = fs.readFileSync("userinfo.json");
 app.use(express.json()); // middleware that coverts the body to json
 app.use(cors())
 
+app.get ("/*", function (req, res) {
+  res.sendFile(
+    path.join(__dirname, "../client/build/index.html"),
+    function (err){
+      if(err){res.status(500).send(err);}
+    }
+  )
+})
+
 app.get("/api", (req, res) => { //  takes in the userinfo and displays it at /api
     try {
       res.send(`${userinfo}`);
@@ -91,7 +100,6 @@ function deleteObject(array, title) {
   });
 
 
-app.listen(3001,() => console.log (`Server started on Port 3001`))
 
 
 // error handling for wrong URL
@@ -104,4 +112,7 @@ app.get("*", function (req, res, next) {
     err.shouldRedirect = true; //New property on err so that our middleware will redirect
     next(err);
   });
+
+  const PORT = process.env.PORT || 5001
   
+  app.listen(PORT,() => console.log (`Server started on Port ${PORT}`))

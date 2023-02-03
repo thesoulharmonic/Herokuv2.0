@@ -1,7 +1,7 @@
 const express = require('express')
 const app = express()
 const fs = require("fs");
-import indexHTML from "../client/public/index.html"
+import indexHTML from "../public/index.html"
 
 var cors = require('cors'); //installed CORS handling https://stackoverflow.com/questions/50968152/cross-origin-request-blocked-with-react-and-express
  

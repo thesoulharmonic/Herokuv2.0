@@ -1,0 +1,68 @@
+nav {
+    background-color: #f4f5f4;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  header {
+    min-height: 10vh;
+    max-height: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  header h1 {font-weight:700}
+  
+  .container {margin-top:20px;}
+
+  .menuButton {
+    background-color: #f4f5f4;
+    padding: 16px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    border: 0px;
+    border-bottom: 2px solid #f4f5f4;
+  }
+  .menuButton a,
+  .menuButton a:hover {
+    color: #000;
+    text-decoration: none;
+  }
+  
+  .menuButton:hover {
+    border-bottom: 2px solid #000;
+  }
+
+
+  span.userInfo {
+    clear: left;
+    display: flex;
+    width:95%;
+    margin-bottom:10px
+}
+
+span.userInfoHead {
+   font-weight:700;
+   margin-bottom:10px
+}
+
+
+.userBox {margin-bottom:30px;
+border:1px solid #f4f5f4;
+padding:20px}
+
+.userBox input{display:block;min-width:400px;clear:both;margin-bottom:10px}
+
+.profile {background-color: #f4f5f4; padding:20px; margin-right:20px; margin-left: 10px;}
+span.profilePic {display:flex;height:90px;width:90px; margin-bottom:20px}
+
+.projectSubmitBox button{margin-top:10px}
+.projectSubmitBox input{margin-bottom:10px}
+.projectSubmitBox textarea{margin-bottom:10px}
+.projectSubmitBox label{font-weight:700;margin-bottom:5px}
+.projectSubmitBox legend {font-size: 1.5rem; font-weight:700}
+.editButton{margin-left:10px}

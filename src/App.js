@@ -19,7 +19,7 @@ function App() {
   }, []); // set to an empty array so it only runs on the first render of the data
 
   const handleDelete = (title) => {
-    fetch(`http://localhost:3001/api/${title}`, {
+    fetch(`/api/${title}`, {
       // gets the JSON item by title set in server
       method: "DELETE", // method
       headers: {
@@ -56,7 +56,7 @@ function App() {
 
   const handleUpdate = (event, updatedData) => {
     event.preventDefault();
-    fetch(`http://localhost:3001/api/${updatedData.title}`, {
+    fetch(`/api/${updatedData.title}`, {
       // PUT method
       method: "PUT",
       headers: {

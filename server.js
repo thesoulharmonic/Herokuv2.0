@@ -2,6 +2,9 @@ const express = require('express')
 const app = express()
 const fs = require("fs");
 import indexHTML from "../public/index.html"
+const PORT = process.env.PORT || 5001
+  
+app.listen(PORT,() => console.log (`Server started on Port ${PORT}`))
 
 var cors = require('cors'); //installed CORS handling https://stackoverflow.com/questions/50968152/cross-origin-request-blocked-with-react-and-express
  
@@ -116,6 +119,4 @@ app.get("*", function (req, res, next) {
     next(err);
   });
 
-  const PORT = process.env.PORT || 5001
-  
-  app.listen(PORT,() => console.log (`Server started on Port ${PORT}`))
+ 
